@@ -33,8 +33,8 @@ const Search=({res,setrestaurant,newres})=>{
     let p= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.8073893&lng=80.91489779999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
     const json= await p.json();
     console.log(json)
-    setrestaurant(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-    newsetrestaurant(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setrestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    newsetrestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     // console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     // console.log(json?.data)
 }
