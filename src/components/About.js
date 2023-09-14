@@ -9,7 +9,7 @@ const About = () => {
   const btnref = React.createRef();
 
   useEffect(() => {
-    audioRef.current.play();
+    btnref.current.click();
   }, []);
   const toggleAudio = () => {
     // Toggle the isPlaying state to pause or play the audio
