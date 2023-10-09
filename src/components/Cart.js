@@ -49,6 +49,9 @@ const Cart = () => {
             {cartItems.map((item,index) => (
               <CartItem key={item.id} item={item} index={index} />
             ))}
+            {new Promise((resolve, reject) => {
+              
+            })}
           </div>
         </>
       )}
