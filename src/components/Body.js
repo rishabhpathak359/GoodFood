@@ -45,16 +45,7 @@ if(!isOnline){
 }
 return(
     <>
-        {!isLogged ? (
-            <div className="py-7 px-4 space-x-2">
-                {/* Login form */}
-                <input type="text" className="border-2 px-2" placeholder="Username" />
-                <input type="password" className="border-2 px-2"  placeholder="Password" />
-                <button className="px-2 bg-orange-300 rounded-md shadow-md text-md hover:bg-orange-800 hover:scale-110" onClick={() => setisLogged(true)}>
-                    Login
-                </button>
-            </div>
-        ) : (
+        
             <>
                 <div className="p-6 space-x-2">
                     <Search res={res} setrestaurant={setrestaurant} newres={newres}/>
@@ -68,7 +59,6 @@ return(
                     }
                 </div>
             </>
-        )}
     </>
 );
 };
